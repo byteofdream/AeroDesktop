@@ -1,0 +1,29 @@
+aero_add_module(AeroShell
+    HEADER_DIR shell
+    SOURCES
+        shell.cpp
+        desktop_window.cpp
+        wallpaper_view.cpp
+        top_bar.cpp
+        dock.cpp
+        overlay.cpp
+        control_center.cpp
+        spotlight.cpp
+        notification_center.cpp
+        calendar_popup.cpp
+        workspace_overview.cpp
+        app_switcher.cpp
+        shortcut_manager.cpp
+    PUBLIC_LIBS
+        AeroCore
+        AeroPlatform
+        AeroTheme
+        AeroGraphics
+        AeroSettings
+        AeroServices
+        AeroCompositor
+        AeroApplications
+        Qt6::Core
+        Qt6::Gui
+        Qt6::Widgets
+)
