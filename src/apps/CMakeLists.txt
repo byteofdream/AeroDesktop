@@ -1,0 +1,30 @@
+aero_add_module(AeroApplications
+    HEADER_DIR apps
+    SOURCES
+        app_registry.cpp
+        builtin_apps.cpp
+        common/app_widgets.cpp
+        finder/finder_app.cpp
+        settings/settings_app.cpp
+        terminal/terminal_app.cpp
+        monitor/monitor_app.cpp
+        calculator/calculator_app.cpp
+        calendar/calendar_app.cpp
+        editor/editor_app.cpp
+        tasks/task_manager_app.cpp
+        archive/archive_app.cpp
+        about/about_app.cpp
+    PUBLIC_LIBS
+        AeroCore
+        AeroPlatform
+        AeroTheme
+        AeroGraphics
+        AeroSettings
+        AeroServices
+        AeroCompositor
+        Qt6::Core
+        Qt6::Gui
+        Qt6::Widgets
+    PRIVATE_LIBS
+        Qt6::Concurrent
+)
